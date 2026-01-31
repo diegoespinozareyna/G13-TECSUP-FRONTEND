@@ -1,0 +1,60 @@
+/* 1. RESET: Quitamos los márgenes por defecto del navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; /* Usamos la fuente importada */
+}
+
+/* 2. ESTILOS DEL CONTENEDOR PADRE (HERO) */
+.hero {
+  /* Altura: 100vh significa el 100% de la altura de la pantalla visible */
+  height: 100vh;
+
+  /* Fondo: Un degradado oscuro sobre una imagen real */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80");
+
+  background-size: cover; /* La imagen cubre todo sin deformarse */
+  background-position: center; /* La imagen se centra */
+
+  /* LA MAGIA DE FLEXBOX (Centrado Perfecto) */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente (Eje X) */
+  align-items: center; /* Centra verticalmente (Eje Y) */
+  text-align: center; /* Centra el texto dentro de la caja */
+}
+
+/* 3. ESTILOS DEL CONTENIDO (Texto) */
+.contenido-hero h1 {
+  color: white;
+  font-size: 3.5rem; /* Tamaño grande */
+  margin-bottom: 10px;
+}
+
+.contenido-hero p {
+  color: #ddd; /* Gris claro */
+  font-size: 1.2rem;
+  margin-bottom: 30px; /* Espacio antes del botón */
+}
+
+/* 4. ESTILOS DEL BOTÓN */
+.boton {
+  display: inline-block; /* Para que acepte padding y margin */
+  text-decoration: none; /* Quita la línea de abajo del link */
+  background-color: #ff4757; /* Color rojo moderno */
+  color: white;
+  padding: 12px 30px; /* Relleno: Arriba/Abajo - Izq/Der */
+  border-radius: 50px; /* Bordes redondos */
+  font-weight: bold;
+
+  /* Transición suave para la animación */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* 5. EFECTO HOVER (Al pasar el mouse) */
+.boton:hover {
+  background-color: #ff6b81; /* Color más claro */
+  transform: scale(1.05); /* Crece un poquito (5%) */
+  cursor: pointer;
+}

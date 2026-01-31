@@ -1,0 +1,73 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #ece2c6;
+  /* border: 1px solid red; */
+}
+
+h1 {
+  color: black;
+  border: 1px solid #fad6a5;
+  background-color: #ece2c6;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.styleForClass {
+  color: red;
+  border: 1px solid #182fda;
+  margin: 5px;
+}
+
+.clase2 {
+  color: blue;
+
+  height: 200px;
+
+  margin: 10px;
+  border: 1px solid red;
+  padding: 10px;
+
+  display: flex;
+  gap: 15px;
+  justify-content: left;
+  align-items: end;
+}
+
+#jerrarquiaId {
+  color: green;
+  border: 1px solid black;
+  margin: 20px 0px 10px 0px;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
+  padding: 10px 20px 5px 70px;
+}
+
+#logoContainer {
+  border: 1px solid red;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center; /* posicionar horizontalmente */
+  align-items: center; /* posicionar verticalmente */
+  width: 30px;
+  height: 30px;
+}
+
+.letterType {
+  font-family: "Bebas Neue", cursive;
+}
+
+.clase3 {
+    border: 2px solid #182fda;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

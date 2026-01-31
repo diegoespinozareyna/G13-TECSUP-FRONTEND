@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.padre {
+  height: 100vh;
+  background-color: black;
+
+  display: grid;
+
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 30px repeat(3, 1fr) 30px;
+
+  gap: 10px
+}
+
+.hijo {
+    border: 1px solid white;
+    color: white
+}
+
+.header {
+    grid-column: 1 / 3;
+}
+
+.nav {
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+}
+
+.footer {
+    grid-column: 1 / 3;
+}
