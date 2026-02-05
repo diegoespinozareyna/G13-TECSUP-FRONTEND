@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="h-screen flex justify-center items-center bg-blue-900">
+      <div id="container" class="relative w-full h-[250px]">
+        <img
+          src="https://fastly.picsum.photos/id/1018/1200/800.jpg?hmac=ytfeVLw2v0Qw-AO63D1RgGpbOvqrIYQ1Gjj-4iRk8VI"
+          alt="imagen1"
+          class="slider imagen1 absolute inset-0 w-full h-full object-cover opacity-100"
+        />
+
+        <img
+          src="https://fastly.picsum.photos/id/1015/1200/800.jpg?hmac=Fpx-97bpiJi8RKyXmx8pd8pdX2un_8q1Zq4WEGa6z5g"
+          alt="imagen2"
+          class="slider imagen2 absolute inset-0 w-full h-full object-cover opacity-0"
+        />
+
+        <img
+          src="https://picsum.photos/id/1016/1200/800"
+          alt="imagen3"
+          class="slider imagen3 absolute inset-0 w-full h-full object-cover opacity-0"
+        />
+
+        <button
+          id="boton-left"
+          class="absolute top-1/2 text-white rounded-full bg-black px-5 py-3 -translate-y-[50%] opacity-50 left-[5px]"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          id="boton-right"
+          class="absolute top-1/2 text-white rounded-full bg-black px-5 py-3 -translate-y-[50%] opacity-50 right-[5px]"
+        >
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+
+        <div
+          id="text-slider"
+          class="absolute left-1/2 -translate-x-[50%] bottom-[10px] bg-black text-white rounded-full py-1 px-2 font-semibold bg-opacity-80"
+        >
+          Imagen 1 de 3
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

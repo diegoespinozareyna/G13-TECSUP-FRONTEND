@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 7.1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="h-screen flex justify-center items-center">
+
+        <div id="card" class="bg-gray-300 rounded-md p-5 flex flex-col items-center justify-center gap-3 transition-all duration-300">
+
+            <img src="https://media.istockphoto.com/id/1170165637/es/vector/icono-del-cable-de-carga.jpg?s=612x612&w=0&k=20&c=TbAOePa8od_x69Ux1Wmx8pPR2UrUwTGnkIZT8k5wo68=" alt="image" width="70" />
+
+            <h1 id="titulo" class="font-bold text-red-700 transition-all duration-300">Desconectado</h1>
+
+            <p id="parrafo" class="text-gray-500 text-xs">Estado actual del sistema</p>
+
+            <button id="buttonChange" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">Encender / Apagar</button>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

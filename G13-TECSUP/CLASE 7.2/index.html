@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 7.2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="h-screen flex justify-center items-center bg-[#0f172a]">
+      <div
+        class="bg-white p-7 rounded-md shadow-gray-100 shadow-md flex flex-col gap-2 justify-center items-start w-[300px] gap-4"
+      >
+        <h1 class="font-bold">Creador de Posts</h1>
+        <label class="text-xs text-gray-500">Tu mensaje:</label>
+        <textarea
+          id="campoTexto"
+          placeholder="¿Qué estas pensando?..."
+          class="w-full p-2 border border-gray-200 rounded-md focus:outline-none focus:ring-blue-200 focus:ring-4 resize-none -mt-3"
+        ></textarea>
+
+        <div class="flex justify-end items-center w-full -mt-4">
+          <div id="contador" class="text-right text-xs text-gray-500">0 / 50</div>
+        </div>
+
+        <div class="bg-blue-100 w-full rounded-md p-2">
+          <h2 class="text-xs font-semibold text-gray-500 uppercase mb-3">
+            Vista Previa
+          </h2>
+          <p id="vistaPrevia" class="text-sm text-gray-500">Escribe algo arriba...</p>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

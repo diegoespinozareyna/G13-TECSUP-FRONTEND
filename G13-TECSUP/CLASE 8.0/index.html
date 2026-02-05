@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="bg-gray-400 flex items-center justify-center h-screen">
+      <div class="bg-white rounded-xl shadow-lg w-80 overflow-hidden">
+        <div id="contenedor" class="relative w-full h-80 bg-gray-50">
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Zapatilla Nike Roja"
+            class="w-full h-full object-cover"
+          />
+
+          <img
+            id="imagenAbsolute"
+            src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Zapatilla Nike Roja"
+            class="w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"
+          />
+        </div>
+        <div class="p-5">
+          <div class="font-bolt text-lg">Nike air Max Red</div>
+          <div class="text-gray-400 text-xs">Running & Lifestyle</div>
+          <div class="font-bolt text-lg">$. 129.00</div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
